@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Form</title>
+    <style>
+        nav{
+            position:fixed;
+            top:0px;
+            width: 100%;
+        }
+        .carousel{
+            position:absolute;top:0px;
+        }
+        body{
+            height: 2500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md fixed-top" id="ab">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <div class="navbar-collapse " id="menu">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">CONTACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">SERVICE</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="nav-link">service 1</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link">service 2</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link">service 3</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link">service 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">DIGITAL</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner w-100">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="images/c-11.png" class="img-fluid w-100">
+                </div>
+                <!-- <div class="carousel-item active" data-bs-interval="1000"> -->
+                    <!-- <img src="images/c-3.jpg" class="img-fluid w-100"> -->
+                <!-- </div> -->
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="images/c-10.jpg" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onscroll=function() {mfunction()};
+        function mfunction() {
+            if(document.documentElement.scrollTop>50){
+                document.getElementById('ab').style.background="red";
+            }
+            else{
+                document.getElementById('ab').style.background="transparent";
+            }
+        }
+    </script>
+</body>
+</html>
